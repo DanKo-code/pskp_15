@@ -41,7 +41,7 @@ button:hover {
     height: 20%;
 
     background-color: white;
-    border: 0.25rem solid black;
+    border: 1px solid black;
     margin-bottom: 1rem;
 
     display: flex;
@@ -62,7 +62,6 @@ button:hover {
 
 .input{
     font-size: 1.6em;
-    border-radius: 0.5rem;
     height: 4vh;
     background-color:white;
     color: black;
@@ -103,7 +102,7 @@ button:hover {
 .contacts .list-container {
     width: 100%;
     padding: 1rem;
-    border: 0.5rem solid black;
+    border: 1px solid black;
     height: 32rem;
     overflow-y: scroll;
 }

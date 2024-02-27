@@ -8,21 +8,21 @@
 
 <form class="form" data-key="{{currentContact.id}}">
 
-    <input class="input" type="text" required name="name" placeholder="Name" value="{{currentContact.name}}"
+    <input class="input" type="text" required name="name" placeholder="Имя" value="{{currentContact.name}}"
            oninput="blockButton('{{currentContact.name}}', '{{currentContact.phone}}')">
 
-    <input class="input" type="tel" required name="phone" placeholder="Phone" value="{{currentContact.phone}}"
+    <input class="input" type="tel" required name="phone" placeholder="Телефон" value="{{currentContact.phone}}"
            oninput="blockButton('{{currentContact.name}}', '{{currentContact.phone}}')">
 </form>
 
 <div class="controls-wrapper">
     <div class="form-part control" >
-        <button onclick="editContact()">Ok</button>
+        <button onclick="editContact()">Изменить</button>
     </div>
     <div class="form-part control">
-        <button onclick="deleteContact()" id="delete-button">Delete</button>
+        <button onclick="deleteContact()" id="delete-button">Удалить</button>
     </div>
     <div class="form-part control" >
-        <button onclick="{{goBack}}">Cancel</button>
+        <button onclick="{{goBack}}">Отказаться</button>
     </div>
 </div>
