@@ -8,11 +8,14 @@
 
 <form class="form" data-key="{{currentContact.id}}">
 
-    <input class="input" type="text" required name="name" placeholder="Имя" value="{{currentContact.name}}"
-           oninput="blockButton('{{currentContact.name}}', '{{currentContact.phone}}')">
+    <div style="display: flex">
+        <input class="input" type="text" required name="name" placeholder="Имя" value="{{currentContact.name}}"
+               oninput="blockButton('{{currentContact.name}}', '{{currentContact.phone}}')">
 
-    <input class="input" type="tel" required name="phone" placeholder="Телефон" value="{{currentContact.phone}}"
-           oninput="blockButton('{{currentContact.name}}', '{{currentContact.phone}}')">
+        <input class="input" type="tel" required name="phone" placeholder="Телефон" value="{{currentContact.phone}}"
+               oninput="blockButton('{{currentContact.name}}', '{{currentContact.phone}}')">
+    </div>
+
 </form>
 
 <div class="controls-wrapper">
